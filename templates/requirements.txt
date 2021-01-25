@@ -1,7 +1,2 @@
-pydantic
 fastapi
 uvicorn
-python-multipart
-Jinja2
-aiofiles
-loguru
