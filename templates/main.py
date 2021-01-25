@@ -1,6 +1,3 @@
-import asyncio
-import time
-
 import uvicorn
 from fastapi import FastAPI
 

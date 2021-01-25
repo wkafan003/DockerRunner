@@ -92,7 +92,7 @@ async def run_new_container(entrypoint_file: str = 'main.py', env: Env = Env.vir
     await dockerfile_template('Dockerfile', env=env.value, dependencies=dependencies,
                               out_file=path + '/Dockerfile', entrypoint_file=entrypoint_file)
     # copyfile('./requirements.txt', f'{path}/requirements.txt')
-    copyfile('./.dockerignore', f'{path}/.dockerignore')
+    copyfile('templates/.dockerignore', f'{path}/.dockerignore')
     c = Container(image_name=name, image_uri=path, container_name=name)
     app.containers[name] = c
     asyncio.create_task(c.force_run(ports=ports))
