@@ -1,0 +1,11 @@
+{
+  "logger": {
+    "path": "./logs",
+    "filename": "kek.log",
+    "level": "info",
+    "rotation": "1 days",
+    "retention": "1 days",
+    "format": "<level>{level: <8}</level> <green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green>  - <cyan>{name}</cyan>:<cyan>{function}</cyan> - <level>{message}</level>"
+
+  }
+}

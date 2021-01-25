@@ -1,0 +1,12 @@
+name: test2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pydantic
+  - fastapi
+  - uvicorn
+  - python-multipart
+  - Jinja2
+#  - pip:
+#    - Flask-Testing
